@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        
+        <!-- CSS fájlok beszúrása -->
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <!-- navigáció -->
+        <nav>
+            <a href="pages/about.html">Rólunk</a>
+            <a href="http://origo.hu" target="_blank">Origo</a>
+            <a href="#section1">Első cikk</a>
+            <a href="#section2">Második cikk</a>
+            <a href="#" onclick="bigSection();">Show me</a>
+            
+        </nav>
+        
+        <!-- első szekció-->
+        <section id="section1">
+            <!-- új bejegyzés -->
+            <article >
+                <h1>Regisztráció</h1>
+                <p>
+                    Kérjük adja meg adatait
+                </p>
+
+                <form method="post" action="http://nettuts.hu/post" novalidate>
+                    <label for="email1">Email: </label>
+                    <input name="email1" type="email" id="email1" autofocus />
+                    <br />
+                    <label for="age1">Életkor: </label>
+                    <input name="age1" type="number" id="age1" max="30" min="18" />
+                    <br />
+                    <label for="color1">Hajszín: </label>
+                    <input name="color1" type="color" id="color1" />
+                    <br />
+                    <label for="password1">Jelszó: </label>
+                    <input name="password1" type="password" id="password1" />
+                    <br />
+                    <input type="submit" value="Küldés" />
+                </form>
+                
+            </article>
+        </section>
+                           
+        
+        <footer style="position: fixed; left: 0; right: 0; bottom: 0;">
+            &copy; Harbach Tamás
+        </footer>
+        <!-- JS fájlok beszúrása -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
